@@ -14,10 +14,10 @@
 
 # Inherit products
 $(call inherit-product, device/samsung/bcm21553-common/common.mk)
-$(call inherit-product, vendor/samsung/totoro/vendor.mk)
+$(call inherit-product, vendor/samsung/torino/vendor.mk)
 
 # Add device package overlay
-DEVICE_PACKAGE_OVERLAYS += device/samsung/totoro/overlay
+DEVICE_PACKAGE_OVERLAYS += device/samsung/torino/overlay
 
 # Add LDPI assets, in addition to MDPI
 PRODUCT_AAPT_PREF_CONFIG := ldpi mdpi
@@ -28,7 +28,7 @@ PRODUCT_AAPT_PREF_CONFIG :=ldpi
 
 # Prebuilt Kernel - DELETE from the package
 ifeq ($(TARGET_PREBUILT_KERNEL),)
-    LOCAL_KERNEL := device/samsung/totoro/prebuilt/kernel
+    LOCAL_KERNEL := device/samsung/torino/prebuilt/kernel
 else
     LOCAL_KERNEL := $(TARGET_PREBUILT_KERNEL)
 endif

@@ -2,7 +2,7 @@
 TARGET_BOOTANIMATION_NAME := vertical-240x320
 
 # Inherit device configuration for totoro
-$(call inherit-product, device/samsung/totoro/full_totoro.mk)
+$(call inherit-product, device/samsung/torino/full_totoro.mk)
 
 # Inherit some common cyanogenmod stuff.
 $(call inherit-product, vendor/cm/config/common_mini_phone.mk)
@@ -14,9 +14,9 @@ $(call inherit-product, vendor/cm/config/gsm.mk)
 $(call inherit-product, device/common/gps/gps_us_supl.mk)
 
 # Release name and versioning
-PRODUCT_RELEASE_NAME := Galaxytotoro
-PRODUCT_VERSION_DEVICE_SPECIFIC := -GT-S5360
+PRODUCT_RELEASE_NAME := Galaxytorino
+PRODUCT_VERSION_DEVICE_SPECIFIC := -GT-S6102
 
 ## Device identifier. This must come after all inclusions
-PRODUCT_DEVICE := totoro
-PRODUCT_NAME := cm_totoro
+PRODUCT_DEVICE := torino
+PRODUCT_NAME := cm_torino

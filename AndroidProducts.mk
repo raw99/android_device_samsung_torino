@@ -17,6 +17,6 @@
 # configurations which are actually buildable (e.g. through lunch)
 #
 
-ifeq (totoro,$(TARGET_PRODUCT))
-    PRODUCT_MAKEFILES += $(LOCAL_DIR)/full_totoro.mk
+ifeq (torino,$(TARGET_PRODUCT))
+    PRODUCT_MAKEFILES += $(LOCAL_DIR)/full_torino.mk
 endif
