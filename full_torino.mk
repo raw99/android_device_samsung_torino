@@ -13,7 +13,7 @@
 # limitations under the License.
 
 # Inherit device specific files
-$(call inherit-product, device/samsung/totoro/device_torino.mk)
+$(call inherit-product, device/samsung/torino/device_torino.mk)
 
 # Overrides
 PRODUCT_NAME := full_torino
