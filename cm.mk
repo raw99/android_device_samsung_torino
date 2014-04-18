@@ -2,7 +2,7 @@
 TARGET_BOOTANIMATION_NAME := vertical-240x320
 
 # Inherit device configuration for totoro
-$(call inherit-product, device/samsung/torino/full_totoro.mk)
+$(call inherit-product, device/samsung/torino/full_torino.mk)
 
 # Inherit some common cyanogenmod stuff.
 $(call inherit-product, vendor/cm/config/common_mini_phone.mk)
