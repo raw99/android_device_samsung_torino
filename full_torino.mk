@@ -13,12 +13,12 @@
 # limitations under the License.
 
 # Inherit device specific files
-$(call inherit-product, device/samsung/totoro/device_totoro.mk)
+$(call inherit-product, device/samsung/totoro/device_torino.mk)
 
 # Overrides
-PRODUCT_NAME := full_totoro
-PRODUCT_DEVICE := totoro
+PRODUCT_NAME := full_torino
+PRODUCT_DEVICE := torino
 PRODUCT_BRAND := Samsung
-PRODUCT_MODEL := GT-S5360
+PRODUCT_MODEL := GT-S6102
 PRODUCT_MANUFACTURER := Samsung
 PRODUCT_CHARACTERISTICS := phone
