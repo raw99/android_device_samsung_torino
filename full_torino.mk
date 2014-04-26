@@ -18,7 +18,6 @@ $(call inherit-product, device/samsung/torino/device_torino.mk)
 # Overrides
 PRODUCT_NAME := full_torino
 PRODUCT_DEVICE := torino
-PRODUCT_BRAND := Samsung
+PRODUCT_BRAND := samsung
+PRODUCT_MANUFACTURER := samsung
 PRODUCT_MODEL := GT-S6102
-PRODUCT_MANUFACTURER := Samsung
-PRODUCT_CHARACTERISTICS := phone
