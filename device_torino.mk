@@ -19,8 +19,18 @@ $(call inherit-product, vendor/samsung/torino/vendor.mk)
 # Add device package overlay
 DEVICE_PACKAGE_OVERLAYS += device/samsung/torino/overlay
 
-# Add LDPI assets, in addition to MDPI
-PRODUCT_AAPT_PREF_CONFIG := ldpi mdpi
+# Init files
+PRODUCT_COPY_FILES += \
+    device/samsung/torino/ramdisk/init.torino.sensors.rc:root/init.torino.sensors.rc
+
+# These are the hardware-specific features
+PRODUCT_COPY_FILES += \
+    frameworks/base/data/etc/android.hardware.camera.xml:system/etc/permissions/android.hardware.camera.xml
+
+# Enable repeatable keys in CWM
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.cwm.enable_key_repeat=true \
+    ro.cwm.repeatable_keys=114,115
 
 ## LDPI assets
 PRODUCT_AAPT_CONFIG := normal mdpi ldpi
