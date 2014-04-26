@@ -12,15 +12,6 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-# Most specific first.
-$(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
-
-# Inherit from those products. Most specific first.
-$(call inherit-product, $(SRC_TARGET_DIR)/product/languages_small.mk)
-
-# This is where we'd set a backup provider if we had one
-$(call inherit-product, $(SRC_TARGET_DIR)/product/full.mk)
-
 # Inherit device specific files
 $(call inherit-product, device/samsung/torino/device_torino.mk)
 
@@ -28,5 +19,6 @@ $(call inherit-product, device/samsung/torino/device_torino.mk)
 PRODUCT_NAME := full_torino
 PRODUCT_DEVICE := torino
 PRODUCT_BRAND := Samsung
-PRODUCT_MANUFACTURER := Samsung
 PRODUCT_MODEL := GT-S6102
+PRODUCT_MANUFACTURER := Samsung
+PRODUCT_CHARACTERISTICS := phone
