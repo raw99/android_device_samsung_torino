@@ -5,5 +5,5 @@ on fs
 # accelerometer
     write /sys/class/input/input3/position 3
 
-+# geomagnetic
+# geomagnetic
     write /sys/class/input/input1/position 0
